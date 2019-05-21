@@ -1,66 +1,76 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 
 <!-- navbar -->
 <!-- Just an image -->
-<nav class="navbar navbar-light bg-transparent">
+
+
+<nav class="navbar navbar-light bg">
   <a class="navbar-brand" href="#">
     <img src="https://res.cloudinary.com/websy/image/upload/v1558382476/logo-1.png"  height="120" alt="">
   </a>
      <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Search</button>
+      <input class="form-control mr-sm-2" type="search" placeholder="Categoria, Color, Precio..." aria-label="Search">
+      <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Buscador de productos</button>
     </form>
 </nav>
 
 
 
 
+<div class="hero-wrap js-fullheight" style="background-image: url(https://res.cloudinary.com/websy/image/upload/v1558415023/32712358_1644120475684919_2858148899804151808_n.jpg); height: 900px;">
+      <div class="container">
+      <div class="overlay"></div>
+        <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center" style="height: 641px;">
+          <h3 class="v">Todo lo nuevo en tendencias</h3>
+          <h3 class="vr">Made in Bolivia</h3>
 
-<!-- <h1 class="text-center" style="Anton; margin-bottom:5%;"> Products</h1> -->
-<div class="banner">
-   <img class="pic-1" src="https://res.cloudinary.com/websy/image/upload/v1558392914/15110497_1110274545736184_5587128915315435856_o.jpg">
- </div>
-
-<!-- <table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Price</th>
-      <th>Description</th>
-      <th>Codigoproducto</th>
-      <th>Product</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @products.each do |product| %>
-      <tr>
-        <td><%= product.name %></td>
-        <td><%= product.price %></td>
-        <td><%= product.description %></td>
-        <td><%= product.codigoproducto %></td>
-        <td><%= product.product_id %></td>
-        <td><%= link_to 'Show', product %></td>
-        <td><%= link_to 'Edit', edit_product_path(product) %></td>
-        <td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br> -->
+          <div class="nueva text-center">
+            <h1>Nueva Temporada</h1>
+            <h2>Tu Catalogo <span>RV10</span></h2>
+          </div>
+        <!--   <div class="mouse">
+            <a href="#" class="mouse-icon">
+              <div class="mouse-wheel"><span class="ion-ios-arrow-down"></span></div> -->
+            <!-- </a>
+          </div> -->
+        </div>
+      </div>
+    </div>
 
 
 
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+          </div>
+
+
+
+              <div class="mouse-wheel"><i class="far fa-arrow-alt-down"></i></div>
+            </a>
+
+            <div class="goto-here"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="heading-section text-center">
+<h1 class="big">Tu Tienda</h1>
+<h2 class="mb-4">Nuestros Productos</h2>
+</div>
 <!------ Include the above in your HEAD tag ---------->
 
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
 
 <div class="container-fluid">
-    <h3 class="h3">Shopping Demo 1 </h3>
+    <h3 class="h3"><!-- shopping Demo-1 --> </h3>
     <div class="row">
         <div class="col-md-3 col-sm-6">
             <div class="product-grid">
@@ -78,21 +88,19 @@
                     <span class="product-discount-label">20%</span>
                 </div>
                 <ul class="rating">
-                    <li class="fa fa-star"></li>
-                    <li class="fa fa-star"></li>
-                    <li class="fa fa-star"></li>
-                    <li class="fa fa-star"></li>
-                    <li class="fa fa-star disable"></li>
                 </ul>
                 <div class="product-content">
                     <h3 class="title"><a href="#">Women's Blouse</a></h3>
-                    <div class="price">Bs.200.00
-                        <span>Bs.400.00</span>
+                    <div class="price">$16.00
+                        <span>$20.00</span>
                     </div>
                     <a class="add-to-cart" href="">+ Add To Cart</a>
                 </div>
             </div>
         </div>
+
+
+
         <div class="col-md-3 col-sm-6">
             <div class="product-grid">
                 <div class="product-image">
@@ -109,11 +117,6 @@
                     <span class="product-discount-label">50%</span>
                 </div>
                 <ul class="rating">
-                    <li class="fa fa-star"></li>
-                    <li class="fa fa-star"></li>
-                    <li class="fa fa-star"></li>
-                    <li class="fa fa-star"></li>
-                    <li class="fa fa-star"></li>
                 </ul>
                 <div class="product-content">
                     <h3 class="title"><a href="#">Men's Plain Tshirt</a></h3>
@@ -140,11 +143,7 @@
                     <span class="product-discount-label">50%</span>
                 </div>
                 <ul class="rating">
-                    <li class="fa fa-star"></li>
-                    <li class="fa fa-star"></li>
-                    <li class="fa fa-star"></li>
-                    <li class="fa fa-star"></li>
-                    <li class="fa fa-star"></li>
+
                 </ul>
                 <div class="product-content">
                     <h3 class="title"><a href="#">Men's Plain Tshirt</a></h3>
@@ -171,11 +170,7 @@
                     <span class="product-discount-label">50%</span>
                 </div>
                 <ul class="rating">
-                    <li class="fa fa-star"></li>
-                    <li class="fa fa-star"></li>
-                    <li class="fa fa-star"></li>
-                    <li class="fa fa-star"></li>
-                    <li class="fa fa-star"></li>
+
                 </ul>
                 <div class="product-content">
                     <h3 class="title"><a href="#">Men's Plain Tshirt</a></h3>
@@ -192,7 +187,7 @@
 
 
 <div class="container-fluid">
-    <h3 class="h3">shopping Demo 2 </h3>
+    <h3 class="h3"><!-- shopping Demo-2 --> </h3>
     <div class="row">
         <div class="col-md-3 col-sm-6">
             <div class="product-grid2">
@@ -279,7 +274,7 @@
 <hr>
 
 <div class="container-fluid">
-    <h3 class="h3">shopping Demo 3 </h3>
+    <h3 class="h3"><!-- shopping Demo-3 --> </h3>
     <div class="row">
         <div class="col-md-3 col-sm-6">
             <div class="product-grid3">
@@ -400,7 +395,7 @@
 <hr>
 
 <div class="container-fluid">
-    <h3 class="h3">shopping Demo 4 </h3>
+    <h3 class="h3"><!-- shopping Demo-4 --> </h3>
     <div class="row">
         <div class="col-md-3 col-sm-6">
             <div class="product-grid4">
@@ -506,7 +501,7 @@
 <hr>
 
 <div class="container-fluid">
-    <h3 class="h3">shopping Demo 5 </h3>
+    <h3 class="h3"><!-- shopping Demo-5  --></h3>
     <div class="row">
         <div class="col-md-3 col-sm-6">
             <div class="product-grid5">
@@ -593,7 +588,7 @@
 <hr>
 
 <div class="container-fluid">
-    <h3 class="h3">shopping Demo 6 </h3>
+    <h3 class="h3"><!-- shopping Demo-6  --></h3>
     <div class="row">
         <div class="col-md-3 col-sm-6">
             <div class="product-grid6">
@@ -680,7 +675,7 @@
 <hr>
 
 <div class="container-fluid">
-    <h3 class="h3">shopping Demo 7 </h3>
+    <h3 class="h3"><!-- shopping Demo-7 --> </h3>
     <div class="row">
         <div class="col-md-3 col-sm-6">
             <div class="product-grid7">
@@ -800,7 +795,7 @@
 <hr>
 
 <div class="container-fluid">
-    <h3 class="h3">shopping Demo 8 </h3>
+    <h3 class="h3"><!-- shopping Demo-8  --></h3>
     <div class="row">
         <div class="col-md-4 col-sm-6">
             <div class="product-grid8">
@@ -879,7 +874,7 @@
 <hr>
 
 <div class="container-fluid">
-    <h3 class="h3">shopping Demo 9 </h3>
+    <h3 class="h3"><!-- shopping Demo-9 --> </h3>
     <div class="row">
         <div class="col-md-3 col-sm-6">
             <div class="product-grid9">
@@ -980,3 +975,6 @@
 
 
 
+<div class="banner">
+   <img class="pic-1" src="https://res.cloudinary.com/websy/image/upload/v1558392914/15110497_1110274545736184_5587128915315435856_o.jpg">
+ </div>
