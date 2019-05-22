@@ -2,18 +2,34 @@
 
 one:
   name: MyString
-  price: 1
-  size: MyString
-  gender: MyString
-  color: MyString
-  quantity: 1
-  description: MyText
+  codigo: MyString
+  azul: false
+  blanco: false
+  nude: false
+  negro: false
+  gris: false
+  verde: false
+  S: false
+  M: false
+  L: false
+  XL: false
+  sexo: MyString
+  precio: 1
+  descripcion: MyText
 
 two:
   name: MyString
-  price: 1
-  size: MyString
-  gender: MyString
-  color: MyString
-  quantity: 1
-  description: MyText
+  codigo: MyString
+  azul: false
+  blanco: false
+  nude: false
+  negro: false
+  gris: false
+  verde: false
+  S: false
+  M: false
+  L: false
+  XL: false
+  sexo: MyString
+  precio: 1
+  descripcion: MyText

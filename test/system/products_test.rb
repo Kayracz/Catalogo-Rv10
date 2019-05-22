@@ -14,13 +14,21 @@ class ProductsTest < ApplicationSystemTestCase
     visit products_url
     click_on "New Product"
 
-    fill_in "Color", with: @product.color
-    fill_in "Description", with: @product.description
-    fill_in "Gender", with: @product.gender
+    check "L" if @product.L
+    check "M" if @product.M
+    check "S" if @product.S
+    check "Xl" if @product.XL
+    check "Azul" if @product.azul
+    check "Blanco" if @product.blanco
+    fill_in "Codigo", with: @product.codigo
+    fill_in "Descripcion", with: @product.descripcion
+    check "Gris" if @product.gris
     fill_in "Name", with: @product.name
-    fill_in "Price", with: @product.price
-    fill_in "Quantity", with: @product.quantity
-    fill_in "Size", with: @product.size
+    check "Negro" if @product.negro
+    check "Nude" if @product.nude
+    fill_in "Precio", with: @product.precio
+    fill_in "Sexo", with: @product.sexo
+    check "Verde" if @product.verde
     click_on "Create Product"
 
     assert_text "Product was successfully created"
@@ -31,13 +39,21 @@ class ProductsTest < ApplicationSystemTestCase
     visit products_url
     click_on "Edit", match: :first
 
-    fill_in "Color", with: @product.color
-    fill_in "Description", with: @product.description
-    fill_in "Gender", with: @product.gender
+    check "L" if @product.L
+    check "M" if @product.M
+    check "S" if @product.S
+    check "Xl" if @product.XL
+    check "Azul" if @product.azul
+    check "Blanco" if @product.blanco
+    fill_in "Codigo", with: @product.codigo
+    fill_in "Descripcion", with: @product.descripcion
+    check "Gris" if @product.gris
     fill_in "Name", with: @product.name
-    fill_in "Price", with: @product.price
-    fill_in "Quantity", with: @product.quantity
-    fill_in "Size", with: @product.size
+    check "Negro" if @product.negro
+    check "Nude" if @product.nude
+    fill_in "Precio", with: @product.precio
+    fill_in "Sexo", with: @product.sexo
+    check "Verde" if @product.verde
     click_on "Update Product"
 
     assert_text "Product was successfully updated"
