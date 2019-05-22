@@ -75,5 +75,94 @@
   <%= @product.descripcion %>
 </p>
 
-<%= link_to 'Edit', edit_product_path(@product) %> |
-<%= link_to 'Back', products_path %>
+
+
+<% content_for :body_class, 'bg-light' %>
+
+<section class="section instrument-show">
+  <div class="columns">
+    <div class="column is-8">
+      <h1 class="title is-2" style="
+    color: darkred !important;
+"><%= @product.name %></h1></h1>
+
+
+      <ul class="pv1">
+        <% if @product.azul? %>
+        <li class="inline-block pr3"><%= @product.azul %></li>
+        <% end %>
+
+        <li class="inline-block pr3"><%= @product.sexo %></li>
+
+        <% if @product.S? %>
+        <li class="inline-block pr3"><%= @product.s %></li>
+        <% end %>
+      </ul>
+
+
+      <div class="content pa4 mt3 bg-white border-radius-3">
+
+      <h3 class="subtitle is-4"><%= @product.name %></h3>
+
+
+      </br>
+      <div class="feature-image">
+      <%= cl_image_tag @product.photo%>
+    </div>
+
+
+ <h3 class="subtitle is-4"></h3>
+      <%= @product.descripcion %>
+
+      <h3 class="subtitle is-4 pt5">Descripcion</h3>
+
+      <table class="table is-narrow">
+        <% if @product.S%>
+        <tr>
+          <td class="has-text-weight-bold">Gender</td>
+          <td><%= @product.sexo %></td>
+        </tr>
+        <% end %>
+
+        <% if @product.azul %>
+          <tr>
+            <td class="has-text-weight-bold">azul:</td>
+            <td><%= @product.azul %></td>
+             <td><%= @product.gris %></td>
+          </tr>
+        <% end %>
+
+        <% if @product.S %>
+          <tr>
+            <td class="has-text-weight-bold">S:</td>
+            <td><%= @product.S %></td>
+            <td class="has-text-weight-bold">M:</td>
+            <td><%= @product.M %></td>
+          </tr>
+        <% end %>
+
+        <tr>
+          <td class="has-text-weight-bold">Price:</td>
+          <td>Bs.<%=@product.precio %></td>
+        </tr>
+      </table>
+    </div>
+    </div>
+
+
+
+    <div class="column is-3 is-offset-1">
+      <div class="bg-white pa4 border-radius-3">
+        <h4 class="title is-5 has-text-centered" style="
+    color: darkred !important;
+">Bs. <%=(@product.precio) %></h4>
+
+      </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
+
