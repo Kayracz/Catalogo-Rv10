@@ -1,6 +1,70 @@
 // Place all the styles related to the Products controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+/* Popup container - can be anything you want */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color:crimson;
+}
+
+/* The actual popup */
+
+.popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 27px 0;
+    font-size: 15px;
+    font-weight: lighter;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -74px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+  padding-left:10px;
+  padding-right:10px;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
 h3.h3{text-align:center;margin:1em;text-transform:capitalize;font-size:1.7em;}
 
 /********************* shopping Demo-1 **********************/
@@ -95,10 +159,10 @@ h3.h3{text-align:center;margin:1em;text-transform:capitalize;font-size:1.7em;}
 .product-grid4 .product-discount-label{left:auto;right:10px;background-color:#d7292a}
 .product-grid4:hover .product-new-label{opacity:0}
 .product-grid4 .product-content{padding:25px}
-.product-grid4 .title{font-size:15px;font-weight:400;text-transform:capitalize;margin:0 0 7px;transition:all .3s ease 0s}
-.product-grid4 .title a{color:#222}
+.product-grid4 .title{font-size:18px; color:crimson;font-weight:400;text-transform:capitalize;margin:0 0 7px;transition:all .3s ease 0s}
+.product-grid4 .title a{color:#222; font-weight:bolder;}
 .product-grid4 .title a:hover{color:#16a085}
-.product-grid4 .price{color:#16a085;font-size:17px;font-weight:700;margin:0 2px 15px 0;display:block}
+.product-grid4 .price{color:crimson;font-size:17px;font-weight:700;margin:0 2px 15px 0;display:block}
 .product-grid4 .price span{color:#909090;font-size:13px;font-weight:400;letter-spacing:0;text-decoration:line-through;text-align:left;vertical-align:middle;display:inline-block}
 .product-grid4 .add-to-cart{border:1px solid #e5e5e5;display:inline-block;padding:10px 20px;color:#888;font-weight:600;font-size:14px;border-radius:4px;transition:all .3s}
 .product-grid4:hover .add-to-cart{border:1px solid transparent;background:#16a085;color:#fff}
@@ -106,6 +170,15 @@ h3.h3{text-align:center;margin:1em;text-transform:capitalize;font-size:1.7em;}
 @media only screen and (max-width:990px){.product-grid4{margin-bottom:30px}
 }
 
+
+.product-grid4 .title a:hover {
+    color: crimson;
+    text-decoration: none;
+}
+
+.product-grid4 .title1{font-size:15px;font-weight:400;text-transform:capitalize;margin:0 0 7px;transition:all .3s ease 0s}
+.product-grid4 .title1 a{color:#222}
+.product-grid4 .title1 a:hover{color:crimson}
 /********************* Shopping Demo-5 **********************/
 .product-image5 .pic-1,.product-image5 .pic-2{backface-visibility:hidden;transition:all .5s ease 0s}
 .product-grid5{font-family:Poppins,sans-serif;position:relative}
@@ -370,16 +443,10 @@ h1 {
 
 
 
-
-
-
-
-
-
-
-
-
-
+.responsive {
+  width: 100%;
+  height: auto;
+}
 
 
 
@@ -389,6 +456,9 @@ h1 {
 .hero-wrap .slider-text {
     color: #fff;
     position: relative;
+  background-position: center;
+  background-size: cover;
+  height: 225px; width: 100%;
 }
 
 .no-gutters {
