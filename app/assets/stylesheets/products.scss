@@ -386,7 +386,7 @@ h3.h3 {
 
 .navbar-brand{
   img{
-    margin-left: 28px;
+    margin-left: 54px;
   }
 }
 
@@ -632,7 +632,7 @@ and (max-device-width : 480px) {
 /* STYLES GO HERE */
 .nueva h1{
   font-size: 45px !important;
-  margin-top: -11% !important;
+  margin-top: -88% !important;
   padding: 10% !important;
 }
 
@@ -659,15 +659,22 @@ and (max-device-width : 480px) {
   font-size: 40px !important;
   display:none;
 }
+.hero-wrap .slider-text h3.v{
+      font-size: 12px!important;
+    }
 }
 
 
 @media screen and (device-aspect-ratio: 2/3) {
+.hero-wrap .slider-text h3.v{
+      font-size: 12px!important;
+    }
+
   .nueva h1{
   // font-size: 50px !important;
-  margin-top: 3% !important;
+  margin-top: -103% !important;
   padding: 10% !important;
-  font-size: 34px !important;
+  font-size: 30px !important;
 }
 
 .nueva h2{
@@ -724,7 +731,7 @@ and (max-device-width : 480px) {
     font-weight: 700;
     font-size: 120px;
     text-transform: uppercase;
-     margin-top: 24%;
+     margin-top: 2%;
 
     span{
       color:red;
@@ -777,4 +784,8 @@ and (max-device-width : 480px) {
 // }
 
 
-
+.jumbotron{
+  background-color: white !important;
+  color: crimson;
+  border-style: solid;
+}
