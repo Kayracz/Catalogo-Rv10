@@ -18,7 +18,7 @@
 
 .popup .popuptext {
     visibility: hidden;
-    width: 160px;
+    width: 241px;
     background-color: black;
     color: #fff;
     text-align: center;
@@ -29,8 +29,8 @@
     position: absolute;
     z-index: 1;
     bottom: 125%;
-    left: 50%;
-    margin-left: -74px;
+    left: -89%;
+    margin-left: 32px;
 }
 
 /* Popup arrow */
@@ -90,7 +90,8 @@ h3.h3{text-align:center;margin:1em;text-transform:capitalize;font-size:1.7em;}
 .product-grid .rating li.disable{color:rgba(0,0,0,.2)}
 .product-grid .product-content{background-color:#fff;text-align:center;padding:12px 0;margin:0 auto;position:absolute;left:0;right:0;bottom:-27px;z-index:1;transition:all .3s}
 .product-grid:hover .product-content{bottom:0}
-.product-grid .title{font-size:13px;font-weight:400;letter-spacing:.5px;text-transform:capitalize;margin:0 0 10px;transition:all .3s ease 0s}
+.product-grid .title{font-size:13px;font-weight:400;letter-spacing:.5px;
+  -transform:capitalize;margin:0 0 10px;transition:all .3s ease 0s}
 .product-grid .title a{color:#828282}
 .product-grid .title a:hover,.product-grid:hover .title a{color:#ef5777}
 .product-grid .price{color:#333;font-size:17px;font-family:Montserrat,sans-serif;font-weight:700;letter-spacing:.6px;margin-bottom:8px;text-align:center;transition:all .3s}
@@ -159,10 +160,9 @@ h3.h3{text-align:center;margin:1em;text-transform:capitalize;font-size:1.7em;}
 .product-grid4 .product-discount-label{left:auto;right:10px;background-color:#d7292a}
 .product-grid4:hover .product-new-label{opacity:0}
 .product-grid4 .product-content{padding:25px}
-.product-grid4 .title{font-size:18px; color:crimson;font-weight:400;text-transform:capitalize;margin:0 0 7px;transition:all .3s ease 0s}
+// .product-grid4 .title{font-size:18px; color:black;font-weight:600;text-transform:capitalize;margin:0 0 7px;transition:all .3s ease 0s}
 .product-grid4 .title a{color:#222; font-weight:bolder;}
 .product-grid4 .title a:hover{color:#16a085}
-.product-grid4 .price{color:crimson;font-size:17px;font-weight:700;margin:0 2px 15px 0;display:block}
 .product-grid4 .price span{color:#909090;font-size:13px;font-weight:400;letter-spacing:0;text-decoration:line-through;text-align:left;vertical-align:middle;display:inline-block}
 .product-grid4 .add-to-cart{border:1px solid #e5e5e5;display:inline-block;padding:10px 20px;color:#888;font-weight:600;font-size:14px;border-radius:4px;transition:all .3s}
 .product-grid4:hover .add-to-cart{border:1px solid transparent;background:#16a085;color:#fff}
@@ -171,12 +171,28 @@ h3.h3{text-align:center;margin:1em;text-transform:capitalize;font-size:1.7em;}
 }
 
 
+.product-grid4 .price {
+    color: black;
+    font-size: 17px;
+    font-weight: 500;
+    margin: 0 2px 15px 0;
+    display: block;
+    margin-top: 7%;
+}
+
 .product-grid4 .title a:hover {
     color: crimson;
     text-decoration: none;
+
 }
 
-.product-grid4 .title1{font-size:15px;font-weight:400;text-transform:capitalize;margin:0 0 7px;transition:all .3s ease 0s}
+.title{
+   font-family: roboto !important;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+// .product-grid4 .title1{font-size:15px;font-weight:400;text-transform:capitalize;margin:0 0 7px;transition:all .3s ease 0s}
 .product-grid4 .title1 a{color:#222}
 .product-grid4 .title1 a:hover{color:crimson}
 /********************* Shopping Demo-5 **********************/
@@ -615,13 +631,15 @@ and (min-device-width : 320px)
 and (max-device-width : 480px) {
 /* STYLES GO HERE */
 .nueva h1{
-  font-size: 50px !important;
-  margin-top: 4% !important;
+  font-size: 45px !important;
+  margin-top: -11% !important;
   padding: 10% !important;
 }
 
 .nueva h2{
-   font-size: 30px !important;
+    font-size: 24px !important;
+    padding-left: 8%;
+    padding-right: 8%;
 }
 
 .vr{
@@ -644,7 +662,36 @@ and (max-device-width : 480px) {
 }
 
 
+@media screen and (device-aspect-ratio: 2/3) {
+  .nueva h1{
+  // font-size: 50px !important;
+  margin-top: 3% !important;
+  padding: 10% !important;
+  font-size: 34px !important;
+}
 
+.nueva h2{
+   font-size: 24px !important;
+}
+
+.vr{
+  display:none;
+}
+
+.responsive{
+  height:600px !important;
+}
+
+.big{
+  font-size: 20px !important;
+  display:none;
+}
+
+.mb-4{
+  font-size: 40px !important;
+  display:none;
+}
+}
 
 
 
@@ -697,6 +744,37 @@ and (max-device-width : 480px) {
     margin-right: auto;
     margin-left: auto;
 }
+
+
+
+.product-grid4 .title1 {
+    text-align: center;
+    font-family: roboto;
+    font-size: 15px;
+    font-weight: 200;
+    text-transform: capitalize;
+    margin: 0 0 7px;
+    transition: all .3s ease 0s;
+  }
+
+
+.product-grid4 .price {
+    color: black;
+    font-family: roboto;
+    font-size: 17px;
+    font-weight: 350;
+    margin: 0 2px 15px 0;
+    display: block;
+    margin-top: 7%;
+  }
+
+// .product-grid4 .price {
+//   color: black;
+//   font-size:17px;
+//   font-weight:500;
+//   margin:0 2px 15px 0;
+//   display:block
+// }
 
 
 
