@@ -503,6 +503,13 @@ h1 {
     z-index: 1;
 }
 
+@media (min-width: 1281px) {
+  .v{
+    display:none;
+  }
+  //CSS
+
+}
 .hero-wrap .slider-text h3.vr {
     -webkit-writing-mode: vertical-lr;
     -ms-writing-mode: tb-lr;
@@ -708,6 +715,9 @@ and (max-device-width : 480px) {
   border: 1px solid rgba(0,0,0,-1.875) !important;
 }
 
+.a2a_default_style{
+  align-items-center:center;
+}
 
 
 .ion-ios-arrow-down:before {
@@ -792,7 +802,7 @@ and (max-device-width : 480px) {
 
 .jumbotron{
   background-color: white !important;
-  color: crimson;
+  color: #AD2B10;
   border-style: solid;
 }
 
@@ -842,3 +852,7 @@ and (max-device-width : 480px) {
   background-repeat: no-repeat;
   background-position: center;
 }
+
+
+
+
