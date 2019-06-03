@@ -855,4 +855,17 @@ and (max-device-width : 480px) {
 
 
 
+.banner-content{
+    // background-image: url('https://res.cloudinary.com/websy/image/upload/v1559509431/Screen_Shot_2019-06-02_at_5.03.26_PM.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
 
+.title2{
+      text-align: center;
+    font-family: roboto;
+    font-size: 15px;
+    font-weight: 200;
+    text-transform: capitalize;
+}
