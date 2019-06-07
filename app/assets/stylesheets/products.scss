@@ -2,6 +2,13 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+
+
+ iframe {
+ max-width: 100%;
+ height: auto;
+}
+
 /* Popup container - can be anything you want */
 .popup {
   position: relative;

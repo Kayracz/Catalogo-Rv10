@@ -16,62 +16,24 @@
         </div>
       </div>
 
+
+   <!--MORE INFO BAR-->
+
 <div class="search2" style="text-align: right;">
-    <a href="#" class="btn btn-light my-2 my-sm-0">Contacto</a>
-    <a href="#" class="btn btn-light my-2 my-sm-0">Direccion</a>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfsojrMN5ZZPrKpE4eD2kMJzAA3_BS5DW7M5mgMmQUGs-8vrQ/viewform?usp=sf_link" target="_blank" class="btn btn-outline-danger my-2 my-sm-0">Encargar Online</a>
+    <a href="https://goo.gl/maps/12rD3fMwQuTZKDqG9" target="_blank" class="btn btn-outline-danger my-2 my-sm-0">Direccion</a>
+    <a href="contact" class="btn btn-outline-danger my-2 my-sm-0">Contacto</a>
+
 </div>
-   </div>
-
-
+</div>
 
 </nav>
-
-<script>
-  $(document).on('turbolinks:load', function() {
-  // Custom
-  var stickyToggle = function(sticky, stickyWrapper, scrollElement) {
-    var stickyHeight = sticky.outerHeight();
-    var stickyTop = stickyWrapper.offset().top;
-    if (scrollElement.scrollTop() >= stickyTop){
-      stickyWrapper.height(stickyHeight);
-      sticky.addClass("is-sticky");
-    }
-    else{
-      sticky.removeClass("is-sticky");
-      stickyWrapper.height('auto');
-    }
-  };
-
-  // Find all data-toggle="sticky-onscroll" elements
-  $('[data-toggle="sticky-onscroll"]').each(function() {
-    var sticky = $(this);
-    var stickyWrapper = $('<div>').addClass('sticky-wrapper'); // insert hidden element to maintain actual top offset on page
-    sticky.before(stickyWrapper);
-    sticky.addClass('sticky');
-
-    // Scroll & resize events
-    $(window).on('scroll.sticky-onscroll resize.sticky-onscroll', function() {
-      stickyToggle(sticky, stickyWrapper, $(this));
-    });
-
-    // On page load
-    stickyToggle(sticky, stickyWrapper, $(window));
-  });
-});</script>
-
-
-
-
-
-
-
-
 
 
 
 <!-- Banner -->
 
-<div class="hero-wrap js-fullheight responsive" style="background-image: url(https://res.cloudinary.com/websy/image/upload/v1559880068/_DSC1569_1.jpg); height: 900px;">
+<div class="hero-wrap js-fullheight responsive" style="background-image: url(https://res.cloudinary.com/websy/image/upload/v1559586403/Screen_Shot_2019-06-02_at_11.10.01_PM.png); height: 900px;">
     <a class="navbar-brand" href="#">
     <img class="img-responsive" src="https://res.cloudinary.com/websy/image/upload/v1558382476/logo-1.png"  height="120" alt="">
   </a>
@@ -83,41 +45,46 @@
           <h3 class="vr">Made in Bolivia</h3>
           <h3 class="v">Made in Bolivia</h3>
           <div class="nueva text-center">
-            <h1 style="color:black;">Tu Catalogo <b style="color:#a30b1e;">RV10</b></h1>
+            <h1 style="color:pearl;">Tu Catalogo <b style="color:#a30b1e; font-family:Mackay;">RV10</b></h1>
             <!-- <h2 style="color:white;"> Ofertas que no podrás rechazar.</h2> -->
 
-<!--MODAL-->
-            <div class="container">
 
-  <!-- Trigger the modal with a button -->
-  <button type="button" class="btn btn-dark btn-lg" data-toggle="modal" data-target="#myModal">Como funciona este catalogo</button>
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-outline-danger btn-lg" data-toggle="modal" data-target="#basicExampleModal">
+  Como Funciona este Catalogo
+</button>
 
-  <!-- Modal -->
-  <div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog">
-
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Modal Header</h4>
-        </div>
-        <div class="modal-body" style="font-size:20px; color:black;">
-    <h1 style="font-size:30px; color:black;">¿Cómo funciona?</h1>
-    <br>
-    <p> Esta Pagina web es un <b>Look Book</b> </p>
-    <p> Si estas interesado(a) comunicanos el codigo del producto, tu talla y el color que deseas</p>
-    <p>*Todas las compras pueden ser hechas por whatsapp, telefono o en nuestras sucursales. </p>
-
-    <p>1. Mira todas nuestras prendas y ofertas desde tu Computadora o Celular.</p>
-     <p>2. Haz clic en el icono de <b>Whatsapp</b> para comunicarte con nosotros.</p>
-   <p> Nuestros envios son <b>GRATIS</b> a todo el Pais!</p></p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
+<!-- Modal -->
+<div class="modal fade" id="basicExampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" style="color:black; font-weight: bold;" id="exampleModalLabel">Instrucciones</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
       </div>
+      <div class="modal-body" style="color:black;">
+    <hr>
+    <!-- <h1 style="font-size:30px; color:black;">¿Cómo funciona?</h1> -->
+    <p style="font-size:25px; font-weight:lighter;"> Esta Pagina web es un <b>Look Book</b> </p>
+    <p style="font-size:25px; font-weight:lighter;"> Si estas interesado(a) comunicanos el codigo del producto, tu talla y el color que deseas.</p>
+    <p style="font-size:25px; font-weight:lighter;">*Todas las compras pueden ser hechas por whatsapp, formulario online, o en nuestras sucursales. </p>
 
+    <p style="font-size:25px; font-weight:lighter;">1. Mira todas nuestras prendas y ofertas desde tu Computadora o Celular.</p>
+     <p style="font-size:25px; font-weight:lighter;">2. Haz clic en el icono de <b style="color:green;">Whatsapp</b> para comunicarte con nosotros.</p>
+   <p style="font-size:25px; font-weight:lighter;"> Nuestros envios son <b>GRATIS</b> a todo el Pais!</p></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-danger" data-dismiss="modal">Cerrar</button>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+      </div>
     </div>
   </div>
 
@@ -333,9 +300,9 @@
 <hr>
 
     <div class="search text-center">
-    <a href="#" class="btn btn-outline-dark my-2 my-sm-0">Poleras</a>
-    <a href="" class="btn btn-outline-dark my-2 my-sm-0">Shorts</a>
-    <a href="#" class="btn btn-outline-dark my-2 my-sm-0">Leggings</a>
+    <a class="btn btn-outline-dark my-2 my-sm-0">Poleras</a>
+    <a  class="btn btn-outline-dark my-2 my-sm-0">Shorts</a>
+    <a class="btn btn-outline-dark my-2 my-sm-0">Leggings</a>
 
 </div>
 </br>
@@ -3323,9 +3290,80 @@ function myFunction() {
 <hr>
 
 
-<!-- <div class="banner">
-   <img class="pic-1" src="https://res.cloudinary.com/websy/image/upload/v1558392914/15110497_1110274545736184_5587128915315435856_o.jpg">
- </div>
+<!-- Footer -->
+<footer class="page-footer font-small stylish-color-dark pt-4">
 
-</div> -->
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-4 mx-auto">
+        <!-- Content -->
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4" id="contact">Sobre Nosotros</h5>
+        <p> RV10 te ofrece el mejor estilo en ropa de calle y ropa deportiva. </p>
+
+        <p>RV10 es una marca de ropa que ofrece los mejores diseños en indumentaria deportiva y casual, siguiendo las tendencias de moda europea, con materiales de alta calidad y confeccionada por manos bolivianas. </p>
+
+        <p><b>Horarios de atencion</b></p>
+        <p> Lunes a Viernes: 10:00 - 21:00 </p>
+        <p> Sabado: 10:00 - 18:00 </p>
+        <p> Domingo: 10:00 - 15:00 </p>
+
+      </div>
+
+
+        <!-- Links -->
+<div class="col-md-4 mx-auto">
+<div class="container">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8937.29435066533!2d-63.184864811949474!3d-17.77329238854669!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93f1e7e1857ebac5%3A0xc2d73e474e1936!2sRV10+SHOWROOM!5e0!3m2!1ses-419!2sbo!4v1559934558209!5m2!1ses-419!2sbo" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
+<br>
+<br>
+ <div class="sharethis-inline-follow-buttons"></div>
+ <br>
+  <div class="footer-copyright text-center py-3">© 2019 Copyright:
+    <a href="https://www.rv10.shop"> Rv10 </a>
+  </div>
+</div>
+
+</footer>
+
+<br>
+
+
+<script>
+  $(document).on('turbolinks:load', function() {
+  // Custom
+  var stickyToggle = function(sticky, stickyWrapper, scrollElement) {
+    var stickyHeight = sticky.outerHeight();
+    var stickyTop = stickyWrapper.offset().top;
+    if (scrollElement.scrollTop() >= stickyTop){
+      stickyWrapper.height(stickyHeight);
+      sticky.addClass("is-sticky");
+    }
+    else{
+      sticky.removeClass("is-sticky");
+      stickyWrapper.height('auto');
+    }
+  };
+
+  // Find all data-toggle="sticky-onscroll" elements
+  $('[data-toggle="sticky-onscroll"]').each(function() {
+    var sticky = $(this);
+    var stickyWrapper = $('<div>').addClass('sticky-wrapper'); // insert hidden element to maintain actual top offset on page
+    sticky.before(stickyWrapper);
+    sticky.addClass('sticky');
+
+    // Scroll & resize events
+    $(window).on('scroll.sticky-onscroll resize.sticky-onscroll', function() {
+      stickyToggle(sticky, stickyWrapper, $(this));
+    });
+
+    // On page load
+    stickyToggle(sticky, stickyWrapper, $(window));
+  });
+});</script>
 
