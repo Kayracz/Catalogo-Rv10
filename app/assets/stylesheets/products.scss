@@ -689,7 +689,7 @@ and (max-device-width : 480px) {
     }
 }
 
-
+// iphone 5
 @media screen and (device-aspect-ratio: 2/3) {
 .hero-wrap .slider-text h3.v{
       font-size: 12px!important;
@@ -702,6 +702,11 @@ and (max-device-width : 480px) {
     font-size: 33px !important;
     text-transform: uppercase;
     margin-top: -104% !important;
+}
+
+.iphone5 .btn-dark.btn-sm{
+display:none !important;
+margin-top: 3px;
 }
 
 .nueva h2{
@@ -1145,7 +1150,12 @@ and (max-device-width : 480px) {
 
 
 
-
+.btn-dark {
+    color: #fff;
+    background-color: #343a40;
+    border-color: #343a40;
+    margin-top: 2px !important;
+}
 
 
 
