@@ -1,5 +1,7 @@
 {
   "name": "micatalogorv10",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "turbolinks": "^5.2.0"
+  }
 }

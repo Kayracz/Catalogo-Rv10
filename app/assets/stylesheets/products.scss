@@ -655,10 +655,23 @@ h1 {
 and (min-device-width : 320px)
 and (max-device-width : 480px) {
 /* STYLES GO HERE */
+
+
+.navbar-brand img {
+   display:none;
+}
+
+.titulos{
+display:none;
+
+}
+
 .nueva h1{
   font-size: 45px !important;
-      margin-top: -55% !important;
+  margin-top: -24% !important;
   padding: 10% !important;
+
+  text-shadow: 1px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 .nueva h2{
@@ -771,6 +784,7 @@ margin-top: 3px;
     font-size: 120px;
     text-transform: uppercase;
      margin-top: 2%;
+     text-shadow: 1px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 
     span{
       color:red;
